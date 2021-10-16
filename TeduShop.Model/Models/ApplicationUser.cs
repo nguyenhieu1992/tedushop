@@ -9,11 +9,13 @@ using System.Threading.Tasks;
 
 namespace TeduShop.Model.Models
 {
+    // Phan sua day nay 2
     public class ApplicationUser : IdentityUser
     {
         [MaxLength(256)]
         public string FullName { set; get; }
 
+        //Sua dòng code 2 ngày 17/10 2
         [MaxLength(256)]
         public string Address { set; get; }
 
