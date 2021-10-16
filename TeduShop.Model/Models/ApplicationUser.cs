@@ -19,6 +19,7 @@ namespace TeduShop.Model.Models
         [MaxLength(256)]
         public string Address { set; get; }
 
+        //Cmon X3
         public DateTime? BirthDay { set; get; }
 
         public async Task<System.Security.Claims.ClaimsIdentity> GenerateUserIdentityAsync(UserManager<ApplicationUser> manager, string authenticationType)
