@@ -6,6 +6,7 @@ namespace TeduShop.Model.Models
     [Table("Menus")]
     public class Menu
     {
+        //suaxx
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int ID { set; get; }
