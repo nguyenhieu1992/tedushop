@@ -88,9 +88,93 @@
     <Compile Include="Infrastructure\IUnitOfWork.cs" />
     <Compile Include="Infrastructure\RepositoryBase.cs" />
     <Compile Include="Infrastructure\UnitOfWork.cs" />
+    <Compile Include="Migrations\202110181803597_InitialDB.cs" />
+    <Compile Include="Migrations\202110181803597_InitialDB.designer.cs">
+      <DependentUpon>202110181803597_InitialDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202110181822062_AddErrorTable.cs" />
+    <Compile Include="Migrations\202110181822062_AddErrorTable.designer.cs">
+      <DependentUpon>202110181822062_AddErrorTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202110181823089_Intergrate-AspnetIdentity.cs" />
+    <Compile Include="Migrations\202110181823089_Intergrate-AspnetIdentity.designer.cs">
+      <DependentUpon>202110181823089_Intergrate-AspnetIdentity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202110181824329_Changkey.cs" />
+    <Compile Include="Migrations\202110181824329_Changkey.designer.cs">
+      <DependentUpon>202110181824329_Changkey.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202110181826259_AddTagField.cs" />
+    <Compile Include="Migrations\202110181826259_AddTagField.designer.cs">
+      <DependentUpon>202110181826259_AddTagField.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202110181827310_AddContentToSlide.cs" />
+    <Compile Include="Migrations\202110181827310_AddContentToSlide.designer.cs">
+      <DependentUpon>202110181827310_AddContentToSlide.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202110181828462_AddMoreQuantitty.cs" />
+    <Compile Include="Migrations\202110181828462_AddMoreQuantitty.designer.cs">
+      <DependentUpon>202110181828462_AddMoreQuantitty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202110181829444_addforeignkey.cs" />
+    <Compile Include="Migrations\202110181829444_addforeignkey.designer.cs">
+      <DependentUpon>202110181829444_addforeignkey.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202110181831271_ContactDetail.cs" />
+    <Compile Include="Migrations\202110181831271_ContactDetail.designer.cs">
+      <DependentUpon>202110181831271_ContactDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202110181833017_Feedback.cs" />
+    <Compile Include="Migrations\202110181833017_Feedback.designer.cs">
+      <DependentUpon>202110181833017_Feedback.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202110181833531_Feedback2.cs" />
+    <Compile Include="Migrations\202110181833531_Feedback2.designer.cs">
+      <DependentUpon>202110181833531_Feedback2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202110181835019_AddCustomerId.cs" />
+    <Compile Include="Migrations\202110181835019_AddCustomerId.designer.cs">
+      <DependentUpon>202110181835019_AddCustomerId.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202110181836008_RenameTableIdentity.cs" />
+    <Compile Include="Migrations\202110181836008_RenameTableIdentity.designer.cs">
+      <DependentUpon>202110181836008_RenameTableIdentity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202110181853193_AddGroupUser.cs" />
+    <Compile Include="Migrations\202110181853193_AddGroupUser.designer.cs">
+      <DependentUpon>202110181853193_AddGroupUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202110181854246_ChangeOrderDetail.cs" />
+    <Compile Include="Migrations\202110181854246_ChangeOrderDetail.designer.cs">
+      <DependentUpon>202110181854246_ChangeOrderDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202110181855072_RevenuesStatisticSP.cs" />
+    <Compile Include="Migrations\202110181855072_RevenuesStatisticSP.designer.cs">
+      <DependentUpon>202110181855072_RevenuesStatisticSP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\ApplicationGroupRepository.cs" />
+    <Compile Include="Repositories\ApplicationRoleGroupRepository.cs" />
+    <Compile Include="Repositories\ApplicationRoleRepository.cs" />
+    <Compile Include="Repositories\ApplicationUserGroupRepository.cs" />
+    <Compile Include="Repositories\ContactDetailRepository.cs" />
+    <Compile Include="Repositories\FooterRepository.cs" />
+    <Compile Include="Repositories\MenuGroupRepository.cs" />
+    <Compile Include="Repositories\MenuRepository.cs" />
+    <Compile Include="Repositories\OrderRepository.cs" />
+    <Compile Include="Repositories\PageRepository.cs" />
+    <Compile Include="Repositories\PostCategoryRepository.cs" />
+    <Compile Include="Repositories\PostRepository.cs" />
+    <Compile Include="Repositories\PostTagRepository.cs" />
     <Compile Include="Repositories\ProductCategoryRepository.cs" />
     <Compile Include="Repositories\ProductRepository.cs" />
+    <Compile Include="Repositories\ProductTagRepository.cs" />
+    <Compile Include="Repositories\SlideRepository.cs" />
+    <Compile Include="Repositories\SupportOnlineRepository.cs" />
+    <Compile Include="Repositories\SystemConfigRepository.cs" />
+    <Compile Include="Repositories\TagRepository.cs" />
+    <Compile Include="Repositories\VisitorStatisticRepository.cs" />
     <Compile Include="TeduShopDbContext.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -107,7 +191,56 @@
       <Name>TeduShop.Model</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202110181803597_InitialDB.resx">
+      <DependentUpon>202110181803597_InitialDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202110181822062_AddErrorTable.resx">
+      <DependentUpon>202110181822062_AddErrorTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202110181823089_Intergrate-AspnetIdentity.resx">
+      <DependentUpon>202110181823089_Intergrate-AspnetIdentity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202110181824329_Changkey.resx">
+      <DependentUpon>202110181824329_Changkey.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202110181826259_AddTagField.resx">
+      <DependentUpon>202110181826259_AddTagField.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202110181827310_AddContentToSlide.resx">
+      <DependentUpon>202110181827310_AddContentToSlide.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202110181828462_AddMoreQuantitty.resx">
+      <DependentUpon>202110181828462_AddMoreQuantitty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202110181829444_addforeignkey.resx">
+      <DependentUpon>202110181829444_addforeignkey.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202110181831271_ContactDetail.resx">
+      <DependentUpon>202110181831271_ContactDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202110181833017_Feedback.resx">
+      <DependentUpon>202110181833017_Feedback.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202110181833531_Feedback2.resx">
+      <DependentUpon>202110181833531_Feedback2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202110181835019_AddCustomerId.resx">
+      <DependentUpon>202110181835019_AddCustomerId.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202110181836008_RenameTableIdentity.resx">
+      <DependentUpon>202110181836008_RenameTableIdentity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202110181853193_AddGroupUser.resx">
+      <DependentUpon>202110181853193_AddGroupUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202110181854246_ChangeOrderDetail.resx">
+      <DependentUpon>202110181854246_ChangeOrderDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202110181855072_RevenuesStatisticSP.resx">
+      <DependentUpon>202110181855072_RevenuesStatisticSP.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
